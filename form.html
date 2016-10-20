@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Седона</h1>
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div  class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--margin1">
+            <a href="photo.html" class="main-nav__link">Фото и видео!</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--margin2">
+            <a href="form.html" class="main-nav__link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Html Academy</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--none">
+            <a href="#" class="main-nav__link  main-nav__link--form">Белая форма</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__logo"></div>
+    </nav>
+    <div class="page-header__logo  page-header__logo--photo"></div>
+  </header>
+  <main class="wrapper">
+    <section class="wrapper__title  wrapper__title--form  wrapper__title--border">
+      <p class="wrapper__text  wrapper__text--form">Оставьте свой отзыв</p>
+      <p class="wrapper__desc  wrapper__desc--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <form class="form" action="">
+      <div class="form__group  form__group--order2">
+        <span class="form__group-name  form__group-name--margin2">Представьтесь, <span>пожалуйста:</span></span>
+        <label class="form__input-name">
+          <span class="form__input-desc">Имя:</span>
+          <input class="form__input-text" type="text" placeholder="Петр">
+        </label>
+        <label class="form__input-name">
+          <span class="form__input-desc">Фамилия:</span>
+          <input class="form__input-text  form__input-text--width" type="text" placeholder="Иванов">
+        </label>
+        <label class="form__input-name  form__input-name--margin">
+          <span class="form__input-desc">Отчество:</span>
+          <input class="form__input-text  form__input-text--width" type="text" placeholder="Александрович">
+        </label>
+      </div>
+      <div class="form__group  form__group--order3">
+        <div class="form__box  form__box--margin3">
+          <span class="form__group-name">Контактная информация:</span>
+        </div>
+        <label class="form__contact  form__contact--margin" for="">
+          <span class="form__contact-desc"><span  class="form__contact-word">Контактный</span>телефон:</span>
+          <input class="form__input-text  form__input-text--width3" type="tel" placeholder="Введите телефон">
+        </label>
+        <label class="form__contact  form__contact--margin" for="">
+          <span class="form__contact-desc">Электронная почта:</span>
+          <input class="form__input-text  form__input-text--width3" type="email" placeholder="Введите e-mail">
+        </label>
+      </div>
+
+      <div class="form__group  form__group--order1">
+        <span class="form__group-name  form__group-name--margin">Ваше общее впечатление:</span>
+        <label class="form__radio" for="radio-filter-1">
+          <input class="form__radio-input" type="radio" id="radio-filter-1" name="radio" checked>
+          <span class="form__radio-indicator"></span>
+          Скорее положительное
+        </label>
+        <label class="form__radio" for="radio-filter-2">
+          <input class="form__radio-input" type="radio" id="radio-filter-2" name="radio">
+          <span class="form__radio-indicator"></span>
+          Скорее отрицательное
+        </label>
+        <label class="form__radio  form__radio--margin" for="radio-filter-3">
+          <input class="form__radio-input" type="radio" id="radio-filter-3" name="radio">
+          <span class="form__radio-indicator"></span>
+           Затруднясь ответить
+        </label>
+      </div>
+
+      <div class="form__group  form__group--order4">
+        <div class="form__box  form__box--margin4">
+          <span class="form__group-name  form__group-name--margin4">Посещенные достопримечательности:</span>
+        </div>
+        <div class="form__checkbox-wrapper">
+          <label class="form__checkbox  form__checkbox--order1">
+            <input class="form__checkbox-input" type="checkbox" checked>
+            <span class="form__checkbox-indicator"></span>
+            Мост Дьявола
+          </label>
+          <label class="form__checkbox  form__checkbox--order3">
+            <input class="form__checkbox-input" type="checkbox" checked>
+            <span class="form__checkbox-indicator"></span>
+            Слайд-парк
+          </label>
+          <label class="form__checkbox  form__checkbox--order2">
+            <input class="form__checkbox-input" type="checkbox">
+            <span class="form__checkbox-indicator"></span>
+             Гора-Колокол
+          </label>
+          <label class="form__checkbox  form__checkbox--margin2  form__checkbox--order4">
+            <input class="form__checkbox-input" type="checkbox" checked>
+            <span class="form__checkbox-indicator"></span>
+            Красные скалы
+          </label>
+        </div>
+      </div>
+
+      <div class="form__group  form__group--textarea  form__group--order5">
+        <div class="form__box  form__box--margin5">
+          <span  class="form__group-name">Опишите свои эмоции:</span>
+        </div>
+        <textarea class="form__textarea" name="111" id="" cols="15" rows="5">Опишите подробно все свои восторги</textarea>
+      </div>
+      <div  class="form__group--order6">
+        <button class="form__button" type="submmit">Отправить отзыв</button>
+      </div>
+    </form>
+
+  </main>
+  <footer class="main-footer">
+    <h2 class="main-footer__title">#VisitSedona</h2>
+    <p class="main-footer__social">
+      <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+      <a class="main-footer__btn  main-footer__btn--tw" href="#">Мы в Twitter</a>
+      <a class="main-footer__btn  main-footer__btn--fb" href="#">Мы на Facebook</a>
+      <a class="main-footer__btn  main-footer__btn--margin  main-footer__btn--youtube" href="#">Мы на Youtube</a>
+    </p>
+    <p class="footer__copyright">
+      <b class="footer__copyright-text" href="#">Разработано</b>
+      <a class="footer__copyright-btn" href="#">HtmlAcademy</a>
+    </p>
+  </footer>
+
+
+
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
+</body>
+</html>
