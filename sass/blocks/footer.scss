@@ -1,0 +1,128 @@
+.main-footer {
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 30px;
+  // width: 320px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.main-footer__title {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 41px;
+}
+
+.main-footer__btn {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+  font-size: 0;
+  margin-right: 6px;
+
+  &--margin {
+    margin-right: 0;
+  }
+
+  &--tw {
+    // background: url("../img/icon-twitter.png") center center no-repeat;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__copyright-text {
+  margin-right: 11px;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer__copyright-btn {
+  display: block;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+  background: url("../img/htmlacademy.png") no-repeat;
+}
+
+@media (min-width: 768px) {
+
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    // width: 84%;
+    // max-width: 960px;
+
+    &--photo {
+      position: relative;
+      top: -59px;
+    }
+  }
+
+  .main-footer__title {
+    margin-left: 61px;
+    margin-top: 10px;
+  }
+
+  .footer__copyright {
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+
+  .footer__copyright-text {
+    padding-top: 0px;
+  }
+
+  .footer__copyright-btn {
+    margin-top: -3px;
+  }
+
+  .main-footer__social {
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .main-footer {
+    // width: 84%;
+    max-width: 1200px;
+
+    &--photo {
+      top: -15px;
+    }
+  }
+
+  .main-footer__title {
+    margin-left: 131px;
+  }
+
+  .footer__copyright {
+    margin-right: 47px;
+  }
+
+  .main-footer__social {
+    margin-left: 258px;
+    margin-right: auto;
+  }
+}

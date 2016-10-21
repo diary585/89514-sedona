@@ -1,0 +1,335 @@
+.information {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: #000000;
+}
+
+.information__item {
+  margin: 0px;
+  padding: 0px;
+  background: #eeeeee;
+  color: #ffffff;
+
+  &--padding {
+    padding-top: 0px;
+  }
+}
+
+.information__desc {
+  padding: 0px;
+  padding-top: 77px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--padding {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+
+  &--padding2 {
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+
+  &--back {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    background: #eeeeee;
+  }
+
+  &--back2 {
+    background: #81b3d2;
+  }
+
+  &--border {
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+  }
+
+  &--triangle {
+    background: url("../img/triangle2.png") left top no-repeat;
+    background-size: 100%;
+  }
+}
+
+.information__title {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.information__number {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.information__text {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 21px;
+
+  &--padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--padding2 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.information__box {
+  height: 260px;
+  background: url('../img/photo-bridge@1x.png') no-repeat;
+  background-size: cover;
+}
+
+.information__img {
+  // width: 320px;
+  height: 260px;
+}
+
+.informatin__list {
+  margin: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 34px;
+  list-style: none;
+  background: #ffffff;
+  text-transform: uppercase;
+}
+
+.information__type {
+  margin-bottom: 3px;
+  padding-top: 7px;
+  padding-left: 70px;
+  padding-right: 40px;
+  text-align: left;
+
+  &--back1 {
+    background: url("../img/icon-house.png") 20px 17px no-repeat;
+  }
+
+  &--back2 {
+    background: url("../img/icon-gift.png") 25px 15px no-repeat;
+  }
+
+  &--back3 {
+    background: url("../img/icon-burger.png") 18px 19px no-repeat;
+  }
+}
+
+.information__type-title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.information__type-desc {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .information__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    &--width {
+      padding: 0;
+      margin: 0;
+      flex-grow: 1;
+      width: 33%;
+    }
+ }
+
+  .information__desc {
+    width: 33%;
+    padding: 0;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    margin: 0;
+
+    &--triangle {
+      background: none;
+    }
+
+    &--order {
+      order: 2;
+    }
+
+    &--padding2 {
+      width: 100%;
+      text-align: center;
+      border-bottom: none;
+    }
+  }
+
+  .information__title {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 26px;
+
+    &--padding {
+      padding-left: 51px;
+      padding-right: 52px;
+    }
+  }
+
+  .information__number {
+    margin-bottom: 22px;
+  }
+
+  .information__text {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &--padding {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+
+    &--padding2 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .informatin__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .information__box {
+    width: 67%;
+    height: 100%;
+    background: url("../img/photo-city@1x-2.png") no-repeat;
+    background-size: cover;
+
+    &--back {
+      background: url("../img/photo-bridge@1x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .information__type {
+    padding: 0px;
+    margin: 0;
+    padding-top: 128px;
+    padding-bottom: 27px;
+    margin-right: 3px;
+    width: 33%;
+    text-align: center;
+
+    &--back1 {
+      background: url("../img/icon-house2.png") center 50px no-repeat;
+    }
+
+    &--back2 {
+      background: url("../img/icon-burger2.png") center 53px no-repeat;
+    }
+
+    &--back3 {
+      background: url("../img/icon-gift2.png") center 48px no-repeat;
+    }
+  }
+
+  .information__type-title {
+    margin-bottom: 21px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .information__type-desc {
+    padding-left: 48px;
+    padding-right: 48px;
+
+    &--padding {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .information__desc {
+    width: 33.3%;
+    padding-top: 51px;
+    padding-bottom: 58px;
+
+    &--padding2 {
+      width: 100%;
+      padding-top: 44px;
+      padding-bottom: 65px;
+    }
+  }
+
+  .information__title {
+    margin-left: 89px;
+    margin-right: 89px;
+
+    &--padding {
+      padding: 0px;
+      margin-left: 124px;
+      margin-right: 124px;
+    }
+  }
+
+  .information__text {
+    padding: 0px;
+    margin-left: 70px;
+    margin-right: 70px;
+
+    &--padding2 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &--padding3 {
+      margin: 0px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      & span {
+        display: block;
+      }
+    }
+
+    &--width {
+      padding: 0px;
+    }
+  }
+
+  .information__type {
+    padding-bottom: 48px;
+  }
+
+}

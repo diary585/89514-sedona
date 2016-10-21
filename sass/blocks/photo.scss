@@ -1,0 +1,160 @@
+.photo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo__item {
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__img {
+  margin-bottom: 7px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.photo__name {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.photo__desc {
+  margin: 0px;
+  margin-bottom: 5px;
+  color: #333333;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.photo__number {
+  position: relative;
+  display: block;
+  padding-left: 37px;
+  width: 43px;
+  color: #000000;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 21px;
+    background: url("../img/like-icon.png") no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-bottom: 32px;
+    padding-left: 60px;
+    padding-right: 58px;
+  }
+
+  .photo__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+
+    &--width {
+      width: 50%;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 4px;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .photo__img {
+    margin-bottom: 6px;
+  }
+
+  .photo__name {
+    margin-left: 20px;
+  }
+
+  .photo__desc {
+    margin-left: 20px;
+  }
+
+  .photo__number {
+    margin-top: 12px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .photo {
+    margin-bottom: 28px;
+    padding: 0px;
+  }
+
+  .photo__item {
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+
+    &--width {
+      width: 33%;
+      flex-grow: 1;
+    }
+  }
+
+  .photo__name-box {
+    position: absolute;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    bottom: -7px;
+    background: rgba(255, 255, 255, 0.7);
+
+    &--padding {
+      padding-bottom: 18px;
+    }
+  }
+
+  .photo__name {
+    line-height: 20px;
+  }
+
+  .photo__number {
+    margin-top: 10px;
+    margin-right: 13px;
+  }
+
+  .photo__img {
+    margin-bottom: 0px;
+  }
+
+  .photo__picture1 {
+    height: 400px;
+  }
+}
